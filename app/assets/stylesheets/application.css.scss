@@ -1,6 +1,4 @@
 @import "bourbon";
-@import "home";
-@import "users";
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -14,3 +12,16 @@
  *
  *= require_self
  */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#menu {
+	position: fixed;
+	width: 500px;
+	top: 0;
+	bottom: 0;
+}
+
+#content {
+	padding:1em;
+}
