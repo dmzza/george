@@ -59,18 +59,18 @@ h2 {
 }
 
 #maplog {
-  padding:200px 30px;
+  padding:0px 0 0 30px;
   background-color:hsl(99, 81%, 79%);
 }
 
 #tuneout {
-  padding:200px 30px;
+  padding:0px 30px;
   background-color:hsl(284, 48%, 57%);
   color:white;
 }
 
 #nooklyn {
-  padding:200px 30px;
+  padding:0px 30px;
   background-color:#445;
   color:white;
 }
