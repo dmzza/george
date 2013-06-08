@@ -87,9 +87,15 @@ h2 {
 }
 
 #tuneout {
-  padding:0px 30px;
+  padding:50px 30px;
   background-color:hsl(284, 48%, 57%);
   color:white;
+}
+
+#tuneout img {
+  height:650px;
+  right:10px;
+  text-align:center;
 }
 
 #nooklyn {
