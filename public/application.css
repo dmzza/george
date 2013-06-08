@@ -14,9 +14,10 @@ h2 {
   width: 180px;
   top: 0;
   bottom: 0;
-  background:#223;
+  background:#112;
   margin:0;
   padding:0;
+  overflow:auto;
 }
 #menu ul {
  margin:0;
@@ -33,21 +34,37 @@ h2 {
   text-decoration:none;
   display:none;
 }
-#menu li:nth-child(1) {
+#menu a:nth-child(1) li {
   background-color:hsl(200, 50%, 95%);
   border-bottom-color: hsl(200, 40%, 75%);
+  background-image:url(hexadown.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:140px 120px;
 }
-#menu li:nth-child(2) {
+#menu a:nth-child(2) li {
   background-color:hsl(99, 81%, 69%);
   border-bottom-color: hsl(99, 51%, 49%);
+  background-image:url(maplog.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:120px 120px;
 }
-#menu li:nth-child(3) {
+#menu a:nth-child(3) li {
   background-color:hsl(284, 48%, 52%);
   border-bottom-color: hsl(284, 48%, 42%);
+  background-image:url(tuneout-flat-icon.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:124px 125px;
 }
-#menu li:nth-child(4) {
+#menu a:nth-child(4) li {
   background-color:#334;
   border-bottom-color: #223;
+  background-image:url(nooklyn-heart.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:120px 120px;
 }
 
 #content {
