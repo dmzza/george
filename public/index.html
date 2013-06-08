@@ -4,6 +4,7 @@
     <title>David Mazza - An expereince unto itself</title>
     <script type="text/javascript" src="//use.typekit.net/uky5kin.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script type="text/javascript" src="application.js"></script>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.1.0/pure-min.css">
     <link rel="stylesheet" type="text/css" href="application.css">
@@ -22,13 +23,8 @@
         <section id="immersion">
           <h1>WANDER</h1>
         </section>
-        <section id="maplog" class="pure-g-r">
-          <div class="pure-u-1-2"><h1>Maplog</h1>
-          <h2>My journey through life as told by longitude and latitude.</h2>
-          </div>
-          <div id="map" class="pure-u-1-2">
-            <img src="http://maps.googleapis.com/maps/api/staticmap?center=-15.800513,-47.91378&zoom=11&size=680x1250&sensor=false">
-          </div>
+        <section id="maplog">
+          <div id="map" class="google-maps"></div>
         </section>
         <section id="tuneout" class="pure-g-r">
           <div class="pure-u-2-3">
@@ -46,7 +42,7 @@
         <section id="nooklyn" class="pure-g-r">
           <div class="pure-u-2-5">
             <h1>Nooklyn</h1>
-            <h2>Lofts and apartments for artists and lunatics.</h2>
+            <h2>Lofts and apartments are finally on a map.</h2>
           </div>
           <div class="pure-u-3-5">
             <a href="http://nooklyn.com"><img src="nooklyn-small.png"></a>

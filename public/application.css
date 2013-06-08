@@ -85,8 +85,16 @@ h2 {
 }
 
 #maplog {
-  padding:0px 0 0 30px;
+  padding:0px 0 0 0px;
   background-color:hsl(99, 81%, 79%);
+}
+#map {
+  width:100%;
+  height:700px;
+}
+.google-maps img {
+  max-width:none;
+  max-height:none;
 }
 
 #tuneout {
