@@ -1,7 +1,9 @@
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 h1 {
- font-size:5em; 
+  font-size:9em; 
+  font-family:'estilo-pro', sans-serif;
+  font-weight:100;
 }
 h2 {
   font-size:3em; 
@@ -56,6 +58,10 @@ h2 {
 #immersion {
   padding: 200px 30px;
   background-color:hsl(200, 50%, 97%);
+  background-image:url(galaxy.gif);
+  background-size:cover;
+  color:white;
+  text-align:center;
 }
 
 #maplog {
