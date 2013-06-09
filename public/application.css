@@ -71,7 +71,16 @@ h2 {
 }
 
 #content {
-  margin-left:180px;
+  box-shadow: -4px 1px 25px -1px rgba(0,0,0,0.4);
+  position: absolute;
+  z-index: 10000;
+  transition: all 1s;
+}
+
+#content:hover {
+  right:-180px; 
+  left:180px;
+  transition:all 1s;
 }
 
 
