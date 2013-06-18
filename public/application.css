@@ -72,7 +72,7 @@ h2 {
 
 #content {
   /*margin-left:180px;*/
-  box-shadow: -6px 0px 0px 83px rgba(0,0,0,0.05);
+  box-shadow: -6px 0px 0px 84px rgba(0,0,0,0.05);
   position: absolute;
   right:-180px; 
   left:180px;
@@ -123,7 +123,7 @@ h2 {
 }
 
 #tuneout {
-  padding:50px 30px;
+  padding:50px 50px;
   background-color:hsl(284, 48%, 57%);
   color:white;
 }
@@ -164,7 +164,7 @@ h2 {
 }
 
 #nooklyn {
-  padding:0px 30px;
+  padding:0px 50px;
   background-color:#445;
   color:white;
 }
