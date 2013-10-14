@@ -74,16 +74,9 @@ h2 {
   /*margin-left:180px;*/
   box-shadow: -6px 0px 0px 84px rgba(0,0,0,0.05);
   position: absolute;
-  right:-180px; 
-  left:180px;
-  z-index: 10000;
-  transition: all 0.3s;
-}
-
-#content:hover {
   right:-20px;
   left:20px;
-  transition:all 0.3s;
+  z-index: 10000;
 }
 
 #open-menu {
@@ -103,10 +96,20 @@ h2 {
 #immersion {
   color:white;
   text-align:center;
+  margin: 10% 0;
+}
+
+#immersion img {
+  width: 30%;
+  text-align: center;
 }
 
 #starry-night {
   background-color: #160C46;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 #map {
