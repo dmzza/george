@@ -123,7 +123,7 @@ h2 {
 
 #handlebars {
   padding:50px 50px;
-  background-color:hsl(99, 81%, 69%);
+  background-color:hsl(245, 46%, 52%);
   color:white;
 }
 
@@ -170,8 +170,42 @@ h2 {
 
 #nooklyn {
   padding:0px 50px;
-  background-color:#445;
+  background-color:#3F3864;
   color:white;
+}
+
+footer {
+  height: 200px;
+}
+
+footer ul {
+  width: 480px;
+  margin: 200px auto;
+  padding: 0;
+}
+
+footer li {
+  float: left;
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 15px 25px;
+  margin: 0 25px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+footer a:hover {
+  background-color: white;
+  color: black;
 }
 
 @media (max-width:1200px) {
@@ -213,5 +247,16 @@ h2 {
   h2 {
     font-size:1.7em;
     margin-top:-50px;  
+  }
+  footer ul {
+    width: 280px;
+    margin: 10px auto;
+  }
+  footer li {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    margin-left: -10px;
+    text-align: center;
   }
 }
