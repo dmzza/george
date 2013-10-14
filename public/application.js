@@ -13,7 +13,7 @@ var requestAnimationFrame =
 $(function() {
   var canvas = document.getElementById("starry-night");
   var sky = canvas.getContext("2d");
-  var stars = new Array(500);
+  var stars = new Array(300);
   HEIGHT = canvas.clientHeight;
   WIDTH = canvas.clientWidth;
   MAX_RADIUS = 4;
@@ -30,17 +30,28 @@ $(function() {
   };
 
   var render = function() {
+    // Clear the sky
     sky.clearRect(0, 0, WIDTH, HEIGHT);
-    sky.beginPath();
 
+    // Draw the stars
+    sky.beginPath();
     for (var i = stars.length - 1; i >= 0; i--) {
       star = stars[i];
 
+      star.x -= 1 * star.radius;
+      star.y -= 1 * star.radius;
+      if(star.x < 0) {
+        star.x = WIDTH;
+      } else if(star.y < 0) {
+        star.y = HEIGHT;
+      }
       sky.arc(star.x, star.y, star.radius, 0, 2*Math.PI);
     }
-
     sky.fillStyle="#EEE";
     sky.fill();
+
+    // Redraw
+    requestAnimationFrame(render);
   };
 
   render();
