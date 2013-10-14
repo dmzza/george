@@ -13,11 +13,9 @@ h2 {
 }
 
 #content {
-  /*margin-left:180px;*/
   box-shadow: -6px 0px 0px 84px rgba(0,0,0,0.05);
   position: absolute;
-  right:-20px;
-  left:20px;
+  margin-left: 20px;
   z-index: 10000;
 }
 
@@ -113,11 +111,11 @@ footer ul {
 }
 
 footer li {
-  float: left;
   list-style: none;
 }
 
 footer a {
+  float: left;
   color: white;
   text-decoration: none;
   font-family: 'proxima-nova', sans-serif;
@@ -169,22 +167,39 @@ footer a:hover {
 }
 
 @media (max-width:600px) {
+  #content {
+    margin-left: 0;
+  }
   h1 {
-    font-size:5.0em;
+    font-size:3.5em;
   }
   h2 {
     font-size:1.7em;
-    margin-top:-50px;  
+    margin-top:-30px;  
   }
   footer ul {
     width: 280px;
     margin: 10px auto;
   }
   footer li {
-    position: relative;
+    width: 100%;
+  }
+  footer a {
     width: 100%;
     margin: 10px 0;
-    margin-left: -10px;
     text-align: center;
+  }
+}
+@media (max-width:400px) {
+  h1 {
+    font-size:3.0em;
+  }
+  h2 {
+    font-size:1.5em; 
+  }
+  .app-store {
+    font-size:1.1em;
+    width:222px;
+    height:68px;
   }
 }
