@@ -101,18 +101,14 @@ h2 {
 }
 
 #immersion {
-  padding: 200px 30px;
-  background-color:hsl(200, 50%, 97%);
-  background-image:url(galaxy.gif);
-  background-size:cover;
   color:white;
   text-align:center;
 }
 
-#maplog {
-  padding:0px 0 0 0px;
-  background-color:hsl(99, 81%, 79%);
+#starry-night {
+  background-color: #160C46;
 }
+
 #map {
   width:100%;
   height:700px;
