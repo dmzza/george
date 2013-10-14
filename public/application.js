@@ -13,9 +13,23 @@ var requestAnimationFrame =
 $(function() {
   var canvas = document.getElementById("starry-night");
   var sky = canvas.getContext("2d");
-  var stars = new Array(300);
+  var stars = new Array(100);
   canvas.width  = window.innerWidth;
   canvas.height = window.innerHeight;
+  var devicePixelRatio = window.devicePixelRatio || 1,
+      backingStoreRatio = sky.webkitBackingStorePixelRatio ||
+                          sky.mozBackingStorePixelRatio ||
+                          sky.msBackingStorePixelRatio ||
+                          sky.oBackingStorePixelRatio ||
+                          sky.backingStorePixelRatio || 1,
+      ratio = devicePixelRatio / backingStoreRatio;
+  if(devicePixelRatio !== backingStoreRatio) {
+    canvas.width  = window.innerWidth * 2;
+    canvas.height = window.innerHeight * 2 + 100;
+    canvas.style.width = window.innerWidth + 'px';
+    canvas.style.height = (window.innerHeight + 100) + 'px';
+    sky.scale(2,2);
+  }
   HEIGHT = canvas.clientHeight;
   WIDTH = canvas.clientWidth;
   MAX_RADIUS = 3;
@@ -35,9 +49,9 @@ $(function() {
   var render = function() {
     // Clear the sky
     sky.clearRect(0, 0, WIDTH, HEIGHT);
+    sky.fillStyle="#EEE";
 
     // Draw the stars
-    sky.beginPath();
     for (var i = stars.length - 1; i >= 0; i--) {
       star = stars[i];
 
@@ -48,10 +62,11 @@ $(function() {
       } else if(star.y < 0) {
         star.y = HEIGHT;
       }
+      sky.beginPath();
       sky.arc(star.x, star.y, star.radius, 0, 2*Math.PI);
+      sky.fill();
+      sky.closePath();
     }
-    sky.fillStyle="#EEE";
-    sky.fill();
 
     // Redraw
     requestAnimationFrame(render);
