@@ -13,7 +13,7 @@ var requestAnimationFrame =
 $(function() {
   var canvas = document.getElementById("starry-night");
   var sky = canvas.getContext("2d");
-  var stars = new Array(100);
+  var stars = new Array(400);
   canvas.width  = window.innerWidth;
   canvas.height = window.innerHeight;
   var devicePixelRatio = window.devicePixelRatio || 1,
@@ -32,13 +32,13 @@ $(function() {
   }
   HEIGHT = canvas.clientHeight;
   WIDTH = canvas.clientWidth;
-  MAX_RADIUS = 3;
-  SPEED = 0.3;
+  MAX_RADIUS = 1.5;
+  SPEED = 0.2;
 
   for (var i = stars.length - 1; i >= 0; i--) {
     x = Math.floor(Math.random()*WIDTH);
     y = Math.floor(Math.random()*HEIGHT);
-    radius = Math.floor(Math.random()*MAX_RADIUS)+1;
+    radius = Math.random()*MAX_RADIUS+0.1;
     stars[i] = {
       'x': x,
       'y': y,

@@ -15,7 +15,6 @@ h2 {
 #content {
   box-shadow: -6px 0px 0px 84px rgba(0,0,0,0.05);
   position: absolute;
-  margin-left: 20px;
   z-index: 10000;
 }
 
@@ -31,7 +30,7 @@ h2 {
 }
 
 #starry-night {
-  background-color: #160C46;
+  background-color: #111;
   position: fixed;
   z-index: -1;
   top: 0;
