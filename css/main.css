@@ -62,9 +62,33 @@ img {
   text-align:center;
   margin: 60px auto 0px auto;
   padding: 0;
-  background: #F8F8F8;
+
   max-width:200px;
+  max-height:200px;
   border-radius:200px;
+}
+
+.logo svg {
+
+  background: #F8F8F8 url("https://pbs.twimg.com/profile_images/492402480672567296/uyOK2mDl_400x400.jpeg") no-repeat 800px center;
+  background-size:cover;
+  border-radius:200px;
+  max-width:200px;
+  transition: background 0.5s;
+}
+
+.logo svg>g {
+  transition: transform 0.3s;
+  transform: translate(0, 0);
+}
+
+.logo:hover svg>g {
+  transform: translate(-125%, 0);
+}
+
+.logo:hover svg {
+  background: #F8F8F8 url("https://pbs.twimg.com/profile_images/492402480672567296/uyOK2mDl_400x400.jpeg") no-repeat center 0px;
+  background-size:cover;
 }
 
 .site-title,
