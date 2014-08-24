@@ -13,7 +13,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  background-color: #fdfdfd;
+  background-color: #F5F5F5;
 }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; }
@@ -45,7 +45,6 @@ img {
 /* Site header */
 
 .site-header {
-  border-top: 5px solid #333;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
   background-color: #E8E8E8;
@@ -53,7 +52,7 @@ img {
 
 .logo {
   text-align:center;
-  margin: 100px auto 10px auto;
+  margin: 60px auto 0px auto;
   padding: 0;
   background: #F8F8F8;
   max-width:200px;
@@ -154,7 +153,7 @@ img {
 
 .page-content {
   padding: 30px 0;
-  background-color: #fff;
+  background-color: #F8F8F8;
 }
 
 
@@ -173,7 +172,7 @@ img {
 .posts h3 {
   margin: 0;
   padding: 20px 0;
-  background-color:#333;
+  background-color:#FDFDFD;
 }
 
 .posts .post-link {
@@ -183,7 +182,6 @@ img {
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  color:#F8F8F8;
 }
 
 .posts .post-date {
@@ -291,9 +289,12 @@ img {
 .post pre.terminal code { background-color: #333; }
 
 .blank {
-	height:300px;
 	width:100%;
 	background-color:#eee;
+}
+
+img.blank {
+  content:url("../img/blank.png");
 }
 
 /* Syntax highlighting styles */
