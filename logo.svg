@@ -1,9 +1,5 @@
-<header class="site-header">
-
-  <div class="wrap">
-
-    <div class="logo">
-<svg width="200px" height="200px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
     <title>Artboard 1</title>
     <desc>Created with Sketch.</desc>
@@ -34,12 +30,12 @@
                 <path d="M117.998047,211.772458 C117.998047,211.772458 164.703128,151.148438 184.648438,78.6191406 C204.59375,6.08984375 202.353516,9.73242188 202.353516,9.73242188 C202.353516,9.73242188 188.323639,5.0371089 175.730469,1.328125 C163.137299,-2.38085909 157.28125,3.13085966 154.927734,10.0820312 C152.574219,17.0332031 152.96289,27.1914059 162.587891,38.8339844 C172.212891,50.4765636 180.855469,42.1894531 180.855469,42.1894531" id="Path-2" stroke="#D0011B" stroke-width="8" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
                 <path d="M373.603516,242.207031 L528.630859,209.90625 L413.882812,89.7363281 C413.882812,89.7363281 427.234375,40.1347657 429.958984,29.4765625 C432.683594,18.8183594 446.666016,16.8769531 446.666016,16.8769531" id="Path-3" stroke="#D0011B" stroke-width="8" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
                 <path d="M122.012695,215.005859 C148.481445,175.047852 174.393554,115.013672 181.521484,89.0605469" id="Path-25" stroke="#D0011B" stroke-width="8" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
-                <!--<g id="Path-27" stroke-width="8">
+                <g id="Path-27" stroke-width="8">
                     <use stroke="#F8E71C" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
                     <use stroke="#FFFFFF" xlink:href="#path-3"></use>
-                </g>-->
+                </g>
             </g>
-            <!--<g id="Path-29" stroke-width="8">
+            <g id="Path-29" stroke-width="8">
                 <use stroke="#F8E71C" sketch:type="MSShapeGroup" xlink:href="#path-4"></use>
                 <use stroke="#FFFFFF" xlink:href="#path-4"></use>
             </g>
@@ -50,32 +46,7 @@
             <g id="Path-26" stroke-width="8">
                 <use stroke="#F8E71C" sketch:type="MSShapeGroup" xlink:href="#path-6"></use>
                 <use stroke="#FFFFFF" xlink:href="#path-6"></use>
-            </g>-->
+            </g>
         </g>
     </g>
 </svg>
-    </div>
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <!--<nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
-          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
-            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
-            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
-            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
-      </div>
-    </nav>-->
-
-  </div>
-
-</header>
