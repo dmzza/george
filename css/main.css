@@ -226,6 +226,11 @@ img {
 /* Post styles */
 /* ----------------------------------------------------------*/
 
+.post {
+  width:800px;
+  margin: 0 auto 100px auto;
+}
+
 .post-header { margin: 10px 0 30px; }
 
 .post-header h1 {

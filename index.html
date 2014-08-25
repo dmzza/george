@@ -8,9 +8,9 @@ layout: default
     {% for post in site.posts %}
       <li class="col-md-6 col-sm-12">
         <!--<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>-->
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          {% if event.thumbnail %}
-            <img src="{{ event.thumbnail | prepend: site.baseurl }}" class="img-responsive">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}#hero">
+          {% if post.thumbnail %}
+            <img src="{{ post.thumbnail | prepend: site.baseurl }}" class="img-responsive">
           {% else %}
             <img src="" class="img-responsive blank">
           {% endif %}

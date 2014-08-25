@@ -3,22 +3,13 @@ layout: post
 title:  "Tune Out"
 date:   2013-05-09 00:00:00
 categories: portfolio ios
+thumbnail: "/img/Tune Out Prototype.png"
+hero: "/img/Tune Out Prototype@2x.png"
+realpixels: "/img/Tune Out Pixels.png"
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Tune Out is a nifty lifehack for the subway. It will alert you when your stop is approaching so that you can focus on reading, napping, gaming, doodling, and daydreaming while you ride.
 
-Jekyll also offers powerful support for code snippets:
+Estimated arrival times for approaching trains make it easy to visualize how much time you have to catch the next train.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+I designed, implemented and released the initial version in 2013. This is a mockup for a future release, but the current version is available on the [App Store](https://itunes.apple.com/us/app/tune-out-l-train-subway-nyc/id644130884?mt=8).

@@ -3,6 +3,10 @@ layout: default
 ---
 <div class="post">
 
+  {% if page.hero %}
+    <img src="{{ page.hero | prepend: site.baseurl }}" id="hero" class="img-responsive">
+  {% endif %}
+
   <header class="post-header">
     <h1>{{ page.title }}</h1>
     <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
@@ -12,4 +16,24 @@ layout: default
   {{ content }}
   </article>
 
+  {% if page.realpixels %}
+    <img src="{{ page.realpixels | prepend: site.baseurl }}" class="img-responsive">
+  {% endif %}
+
 </div>
+
+<ul class="posts row">
+  {% for post in site.posts %}
+    <li class="col-md-6 col-sm-12">
+      <!--<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}#hero">
+        {% if post.thumbnail %}
+          <img src="{{ post.thumbnail | prepend: site.baseurl }}" class="img-responsive">
+        {% else %}
+          <img src="" class="img-responsive blank">
+        {% endif %}
+        <h3>{{ post.title }}</h3>
+        </a>
+    </li>
+  {% endfor %}
+</ul>
